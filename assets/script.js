@@ -82,3 +82,16 @@ function limpaFormSecond (){
 	limparRadios('inlineRadioOptions');
 	limparDiv('respDivRadio');
 }
+
+function adicionarTec () {
+	 var inputTecnologia = document.getElementById('inputTecnologia');
+    var listaTecnologias = document.getElementById('listaTecnologias');
+    var tecnologia = inputTecnologia.value;
+
+    if (tecnologia) {
+        var divTecnologia = document.createElement('div');
+        divTecnologia.textContent = tecnologia;
+        listaTecnologias.appendChild(divTecnologia);
+        inputTecnologia.value = '';
+    }
+}

@@ -88,14 +88,16 @@
 					    Quais são as tecnologias nas quais você gostaria de se especializar ou conhecer?
 					  </label>				
 					  <div class="input-group mb-3">
-						  <input type="text" class="form-control">
+						  <input type="text" class="form-control" id="inputTecnologia">
 						  <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fa fa-plus"></i></button>
-					  </div>				 					  
+					  </div>	
+					  <div id="listaTecnologias"></div>			 					  
 	    			</div>
 	    			<div class="col-md-2"></div>
 	    		</div>
     			  		
     		</div>
+    		
     		<div class="row mt-5">
     			<div class="col-md-12 text-center">
     				<button class="btn btn-primary" type="submit">Enviar</button>
@@ -148,6 +150,7 @@
     // Call getResults() on button click
     document.querySelector('.btn.btn-primary').addEventListener('click', getResults);
     document.querySelector('.btn.btn-warning.limparSec').addEventListener('click', limpaFormSecond);
+    document.getElementById('button-addon2').addEventListener('click', adicionarTec)
   </script>
   </body>
 </html>
